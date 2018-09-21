@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  //- .alert.alert-danger.alert-dismissible.fade.show#deleteAlert(role='alert')
+  //-   | Article has been deleted.
+  //-   button.close(type='button', data-dismiss='alert', aria-label='Close')
+  //-     span(aria-hidden='true') ×
+
+  h1.text-center.mt-5 Listing All Articles
+  .list-group.articles-listing
+    each article, i in articles
+      a.list-group-item.list-group-item-action.flex-column.align-items-start(href="/articles/"+article._id)
+        .d-flex.w-100.justify-content-between
+          h5.mb-1 #{article.title}
+          small 3 days ago
+        p.mb-1
+          | #{article.body}
+        //- small #{article.author}
+  

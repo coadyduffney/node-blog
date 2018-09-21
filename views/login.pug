@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .wrapper
+    .card.login-card
+      .card-body
+        h1.card-title.text-center Login
+        h6.card-subtitle.mb-2.text-muted.text-center.mb-4 Please enter your username & password
+        form(method='POST',action="/users/login")
+          .form-group
+            label Username:
+            input.form-control(name='username', type='text')
+          .form-group
+            label Password:
+            input.form-control(name='password', type='password')
+          input.btn.btn-dark.btn-lg.btn-block.mt-4(type='submit', value='Login')

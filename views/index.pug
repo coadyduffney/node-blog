@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .wrapper
+    .jumbotron.text-center
+      h1.display-3 Node-Blog
+      p.lead
+        | Blogging Made Easy.
+      hr.my-4
+      p
+        | A simple yet powerful blogging website created using Node.js, Express, and MongoDB.
+      if user
+        a.btn.btn-dark.btn-lg(href='/articles/view_articles', role='button') Get Started
+      else
+        a.btn.btn-dark.btn-lg(href='/users/register', role='button') Get Started

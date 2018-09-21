@@ -1,0 +1,44 @@
+extends layout
+
+block content
+  //- h1.text-center.mt-5 Register New User
+  //- form(method='POST',action="/users/register")
+  //-   .form-group
+  //-     label Name:
+  //-     input.form-control(name='name', type='text')
+  //-   .form-group
+  //-     label Email:
+  //-     input.form-control(name='email', type='email')
+  //-   .form-group
+  //-     label Username:
+  //-     input.form-control(name='username', type='text')
+  //-   .form-group
+  //-     label Password:
+  //-     input.form-control(name='password', type='password')
+  //-   .form-group
+  //-     label Confirm Password:
+  //-     input.form-control(name='password2', type='password')
+  //-   input.btn.btn-dark(type='submit', value='Register')
+  
+  .wrapper
+    .card.login-card
+      .card-body
+        h1.card-title.text-center Sign Up
+        h6.card-subtitle.mb-2.text-muted.text-center.mb-4 Create an account below to start using Node-Blog!
+        form(method='POST',action="/users/register")
+          .form-group
+            label Name:
+            input.form-control(name='name', type='text')
+          .form-group
+            label Email:
+            input.form-control(name='email', type='email')
+          .form-group
+            label Username:
+            input.form-control(name='username', type='text')
+          .form-group
+            label Password:
+            input.form-control(name='password', type='password')
+          .form-group
+            label Confirm Password:
+            input.form-control(name='password2', type='password')
+          input.btn.btn-dark.btn-lg.btn-block.mt-4(type='submit', value='Create Account')          

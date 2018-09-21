@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1.text-center.mt-5 #{title}
+  form(method='POST',action="/articles/edit/"+article._id)
+    .form-group
+      label Title:
+      input.form-control(name='title', type='text', value=article.title)
+    .form-group
+      label Body:
+      textarea.form-control(name='body', rows=15)= article.body    
+    input.btn.btn-dark(type='submit', value='Submit')

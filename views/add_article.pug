@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1.text-center.mt-5 Add New Article
+  form.add-article-form(method='POST',action="/articles/add")
+    .form-group
+      label Title:
+      input.form-control(name='title', type='text', placeholder="Title of your article")
+    .form-group
+      label Body:
+      textarea.form-control(name='body', placeholder="Body of your article" rows=15)
+    input.btn.btn-dark.btn-lg.my-5(type='submit', value='Submit')
+    

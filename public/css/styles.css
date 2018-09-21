@@ -1,0 +1,69 @@
+body {
+  background-image: url('../img/background-1.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #e0e0e0ee !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff !important;
+}
+
+.wrapper {
+  height: 90vh;
+  position: relative;
+}
+
+.jumbotron {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-30%);
+  left: 0;
+  right: 0;
+  background-color: rgba(238, 238, 238, 0);
+}
+
+.alert-error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert-success_message {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.logo-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-size: 1.5rem;
+}
+
+.login-card {
+  width: 525px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  transform: translateY(-30%);
+  box-shadow: 0px 13px 29px 0px rgba(0, 0, 0, 0.75);
+}
+
+.articles-listing {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.add-article-form {
+  width: 80%;
+  margin: 0 auto;
+}

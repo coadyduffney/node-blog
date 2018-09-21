@@ -1,0 +1,6 @@
+.messages
+  each type in Object.keys(locals.messages)
+    each message in Object.values(locals.messages)
+      div(class="mt-2 alert alert-dismissible fade show alert-"+type) #{message}
+        button.close(type='button', data-dismiss='alert', aria-label='Close')
+          span(aria-hidden='true') ×
