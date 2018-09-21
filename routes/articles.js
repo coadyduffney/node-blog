@@ -16,22 +16,18 @@ router.get('/add', ensureAuthenticated, function(req, res) {
 
 // View Articles Route
 router.get('/view_articles', function(req, res) {
-  let authors = [];
   Article.find(function(err, articles) {
-    articles.forEach(article => {
-      User.findById(article.author, function(err, user) {
-        if (article.author == user._id) {
-          authors.push(user.name);
-          console.log(authors);
-        } else {
-          console.log(err);
-        }
-      });
-    });
-    // console.log(authors);
     res.render('view_articles', {
       articles: articles
     });
+    // articles.forEach(article => {
+    //   User.findById(article.author, function(err, user) {
+    //     if (article.author == user._id) {
+    //     } else {
+    //       console.log(err);
+    //     }
+    //   });
+    // });
   });
 });
 
